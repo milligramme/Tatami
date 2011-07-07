@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %meta{:character => "utf-8"}
+    %title svg test
+  %body
+    %h1 Timeline 2 SVG polygon
+    %form{:action => '/', :method => 'GET'}
+      %input{:type => "submit", :value => "Reload"}
+    %svg
+      %polygon{:fill => "none", :stroke => "#963", :points => "#{@ar}"}
