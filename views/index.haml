@@ -2,10 +2,16 @@
 %html
   %head
     %meta{:character => "utf-8"}
+    %link{:rel => :stylesheet, :href => "/styles.css"}
     %title Tatami Iwashi
   %body
     %h1 Timeline 2 SVG polygon
     %form{:action => '/', :method => 'GET'}
       %input{:type => "submit", :value => "Reload"}
-    %svg{:xmlns => "http://www.w3.org/2000/svg"}
-      %polygon{:fill => "none", :stroke => "#963", :points => "#{@ar}"}
+    .svg
+      %svg{:xmlns => "http://www.w3.org/2000/svg"}
+        %polygon{:fill => "none", :stroke => "#963", :points => "#{@pts}"}
+    .text 
+      !=@txt
+    .points
+      !=@pts
