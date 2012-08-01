@@ -1,5 +1,5 @@
 require "bundler"
 Bundler.require
 
-require "./tweet2svg.rb"
+require "./app.rb"
 run Sinatra::Application
