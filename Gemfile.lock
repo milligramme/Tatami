@@ -1,24 +1,28 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.6)
+    addressable (2.2.8)
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
-      rack (< 2, >= 1.1.0)
+      rack (>= 1.1.0, < 2)
     faraday_middleware (0.6.5)
       faraday (~> 0.6.0)
-    haml (3.1.2)
+    haml (3.1.6)
     hashie (1.0.0)
-    multi_json (1.0.3)
+    multi_json (1.0.4)
     multi_xml (0.2.2)
-    multipart-post (1.1.2)
-    rack (1.3.1)
-    simple_oauth (0.1.5)
-    sinatra (1.2.6)
-      rack (~> 1.1)
-      tilt (< 2.0, >= 1.2.2)
-    tilt (1.3.2)
+    multipart-post (1.1.5)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    sass (3.1.20)
+    simple_oauth (0.1.9)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    tilt (1.3.3)
     twitter (1.6.0)
       faraday (~> 0.6.1)
       faraday_middleware (~> 0.6.3)
@@ -32,5 +36,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  sass
   sinatra
-  twitter
+  twitter (= 1.6.0)
